@@ -3,19 +3,15 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert(
-      "todoItems",
+      "tags",
       [
         {
-          task: "Score goals",
-          deadline: "November",
-          todoListId: 1,
+          title: "Champions League",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          task: "Code efficiently",
-          deadline: "March",
-          todoListId: 2,
+          title: "Software",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -25,6 +21,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete("todoItems", null, {});
+    await queryInterface.bulkDelete("tags", null, {});
   },
 };

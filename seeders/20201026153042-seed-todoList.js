@@ -8,11 +8,13 @@ module.exports = {
         [
           {
             name: "Play football",
+            userId: 1,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
           {
             name: "Learn coding",
+            userId: 2,
             createdAt: new Date(),
             updatedAt: new Date(),
           },
